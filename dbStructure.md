@@ -26,6 +26,7 @@
 | readily_available | TINYINT | NOT NULL | INDEX | 
 | number_of_owners | UNSIGNED TINYINT | NULL DEFAULT(1)| |
 | optionals | TEXT | NULL | |
+| description | TEXT | NULL | |
 | for_sale_since | DATE | NOT NULL | INDEX |
 
 ### Problemi trovati:
