@@ -28,6 +28,7 @@
 | optionals | TEXT | NULL | |
 | description | TEXT | NULL | |
 | for_sale_since | DATE | NOT NULL | INDEX |
+| vin | CHAR(17) | NOT NULL UNIQUE | |
 
 ### Problemi trovati:
 - readily_available dovrebbe essere un booleano, mysql non  offre un vero e proprio booleano, sotto la scocca è un TINYINT, quindi potrebbe essere un valore qualsiasi e solo 0 verrebbe letto come false lato backend js, a meno che non facciamo manipolazioni dei dati recuperati dal db.
