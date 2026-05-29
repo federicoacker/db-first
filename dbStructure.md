@@ -19,6 +19,7 @@
 | emission_class | ENUM ('Euro 6e', 'Euro 6d', 'Euro 6d-TEMP', 'Euro 6c', 'Euro 6b', 'Euro 6a', 'Euro 6', 'Euro 5', 'Euro 4', 'Euro 3', 'Euro 2', 'Euro 1', 'Pre-Euro') | NOT NULL | INDEX |
 | gearbox | ENUM ('Manual', 'Automatic', 'Sequential', 'Other') | NOT NULL | INDEX |
 | seats | UNSIGNED TINYINT | NOT NULL | INDEX |
+| doors | UNSIGNED TINYINT | NOT NULL | INDEX |
 | frame_type | ENUM ('City Car', 'Cabrio', 'Coupé', 'SUV/Offroad/Pick-up', 'Station Wagon', 'Sedan', 'Minivan', 'Truck', 'Other') | NOT NULL | INDEX |
 | length_m | FLOAT (4,2) | NOT NULL | INDEX |
 | height_m | FLOAT (4,2) | NOT NULL | INDEX |
