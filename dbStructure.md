@@ -25,6 +25,6 @@
 | readily_available | TINYINT | NOT NULL | INDEX | 
 | number_of_owners | UNSIGNED TINYINT | NULL DEFAULT(1)| |
 
-### Problemi trovati.
+### Problemi trovati:
 readily_available dovrebbe essere un booleano, mysql non offre un vero e proprio booleano, sotto la scocca è un TINYINT, quindi potrebbe essere un valore qualsiasi e solo 0 verrebbe letto come false lato backend js, a meno che non facciamo manipolazioni dei dati recuperati dal db.
 L'alternativa è usare BIT(1) che forza la colonna ad avere valore 0 o 1. Il problema è che quando la andiamo a recuperare dal db, lui ci restituisce un buffer, che per js è un valore truthy sempre, quindi non possiamo fare conversione immediata a boolean. La soluzione più semplice è fare lo storage come TINYINT(1) che è più portable attraverso vari dbms e poi fare la conversione a valore booleano e i controlli al lato backend in modo da non avere mai valori diversi da 0 e 1 nel db.
