@@ -5,30 +5,30 @@
 | Column Name | Type | Attributes | Index |
 |---|---|---|---|
 | id | UNSIGNED INT | NOT NULL AUTO_INCREMENT UNIQUE | PRIMARY KEY |
-| maker | VARCHAR(50) | NOT NULL | INDEX |
-| model | VARCHAR(50) | NOT NULL | INDEX |
-| mileage | UNSIGNED INT | NOT NULL | INDEX | 
-| colour | VARCHAR(30) | NOT NULL | INDEX |
+| maker | VARCHAR(50) | NOT NULL |  |
+| model | VARCHAR(50) | NOT NULL |  |
+| mileage | UNSIGNED INT | NOT NULL |  | 
+| colour | VARCHAR(30) | NOT NULL |  |
 | img | VARCHAR(255) | NULL DEFAULT(placeholder.jpg) | |
-| price | UNSIGNED INT | NOT NULL | INDEX |
-| condition | ENUM('Excellent', 'Good', 'Decent', 'Bad', 'For Parts') | NOT NULL | INDEX |
-| year | YEAR | NOT NULL | INDEX |
-| power_kw | UNSIGNED MEDIUMINT | NOT NULL | INDEX |
-| power_hp | UNSIGNED MEDIUMINT | NOT NULL | INDEX |
-| fuel_type | ENUM ('Gasoline', 'Diesel', 'Methane', 'Lpg', 'Electric')| NOT NULL | INDEX |
-| emission_class | ENUM ('Euro 6e', 'Euro 6d', 'Euro 6d-TEMP', 'Euro 6c', 'Euro 6b', 'Euro 6a', 'Euro 6', 'Euro 5', 'Euro 4', 'Euro 3', 'Euro 2', 'Euro 1', 'Pre-Euro') | NOT NULL | INDEX |
-| gearbox | ENUM ('Manual', 'Automatic', 'Sequential', 'Other') | NOT NULL | INDEX |
-| seats | UNSIGNED TINYINT | NOT NULL | INDEX |
-| doors | UNSIGNED TINYINT | NOT NULL | INDEX |
-| frame_type | ENUM ('City Car', 'Cabrio', 'Coupé', 'SUV/Offroad/Pick-up', 'Station Wagon', 'Sedan', 'Minivan', 'Truck', 'Other') | NOT NULL | INDEX |
-| length_m | FLOAT (4,2) | NOT NULL | INDEX |
-| height_m | FLOAT (4,2) | NOT NULL | INDEX |
-| width_m | FLOAT (4,2) | NOT NULL | INDEX |
-| readily_available | TINYINT | NOT NULL | INDEX | 
+| price | UNSIGNED INT | NOT NULL |  |
+| condition | ENUM('Excellent', 'Good', 'Decent', 'Bad', 'For Parts') | NOT NULL |  |
+| year | YEAR | NOT NULL |  |
+| power_kw | UNSIGNED MEDIUMINT | NOT NULL |  |
+| power_hp | UNSIGNED MEDIUMINT | NOT NULL |  |
+| fuel_type | ENUM ('Gasoline', 'Diesel', 'Methane', 'Lpg', 'Electric')| NOT NULL |  |
+| emission_class | CHAR(10) | NOT NULL |  |
+| gearbox | ENUM ('Manual', 'Automatic', 'Sequential', 'Other') | NOT NULL |  |
+| seats | UNSIGNED TINYINT | NOT NULL |  |
+| doors | UNSIGNED TINYINT | NOT NULL |  |
+| frame_type | VARCHAR(30) | NOT NULL |  |
+| length_m | FLOAT (4,2) | NOT NULL |  |
+| height_m | FLOAT (4,2) | NOT NULL |  |
+| width_m | FLOAT (4,2) | NOT NULL |  |
+| readily_available | TINYINT | NOT NULL |  | 
 | number_of_owners | UNSIGNED TINYINT | NULL DEFAULT(1)| |
 | optionals | TEXT | NULL | |
 | description | TEXT | NULL | |
-| for_sale_since | DATE | NOT NULL | INDEX |
+| for_sale_since | DATE | NOT NULL |  |
 | vin | CHAR(17) | NOT NULL UNIQUE | |
 
 ### Problemi trovati:
