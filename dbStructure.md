@@ -9,7 +9,7 @@
 | model | VARCHAR(50) | NOT NULL | INDEX |
 | mileage | UNSIGNED INT | NOT NULL | INDEX | 
 | colour | VARCHAR(30) | NOT NULL | INDEX |
-| img | VARCHAR(128) | NULL DEFAULT(placeholder.jpg) | |
+| img | VARCHAR(255) | NULL DEFAULT(placeholder.jpg) | |
 | price | UNSIGNED INT | NOT NULL | INDEX |
 | condition | ENUM('Excellent', 'Good', 'Decent', 'Bad', 'For Parts') | NOT NULL | INDEX |
 | year | YEAR | NOT NULL | INDEX |
